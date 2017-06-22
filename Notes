@@ -1,0 +1,9 @@
+Remembers
+
+Can I use single-quotes or double-quotes to make a string or do they do different things?
+In Ruby the " (double-quote) tells Ruby to replace variables it finds with #{}, but the '(single-quote) tells Ruby to leave the string alone and ignore any variables inside it.
+
+Should I use %{} or #{} for formatting?
+You will almost always use #{} to format your strings, but there are times when you want to apply the same format to multiple values. That's when %{} comes in handy.
+
+Change your script to use $stdin.gets.chomp everywhere that you have gets.chomp. You should use $stdin.gets.chomp from now on since the action gets.chomp has problems with ARGV.
