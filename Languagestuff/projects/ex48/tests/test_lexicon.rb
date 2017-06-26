@@ -1,4 +1,4 @@
-require 'ex48/lexicon.rb'
+require './tests/lexicon.rb'
 require "test/unit"
 
 class TestLexicon < Test::Unit::TestCase
@@ -12,7 +12,7 @@ class TestLexicon < Test::Unit::TestCase
   end
 
   def test_verbs()
-    assert_equal(Lexicon.scan("go")), [['verb', 'go']])
+    assert_equal(Lexicon.scan("go"), [['verb', 'go']])
     result = Lexicon.scan("go kill eat")
     assert_equal(result, [['verb', 'go'],
             ['verb', 'kill'],
